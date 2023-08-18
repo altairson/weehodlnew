@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600&family=Roboto+Condensed:wght@700&display=swap");
+
+@font-face {
+  font-family: bebas;
+  src: url("../fonts/BebasNeue-Bold.otf");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: #0d0c0c;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.scroller {
+  height: 100vh;
+}
+
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: visible;
+    background: #0d0c0c;
+  }
+  body {
+    height: initial;
+    width: initial;
+  }
+
+  .scroller {
+    height: initial;
+    line-height: 183.5%;
+  }
+}
+
+.scrollbar-track {
+  // opacity: 0 !important;
+  background-color: transparent !important;
+
+  .scrollbar-thumb {
+    background-color: white !important;
+    opacity: 0.7 !important;
+  }
+}
+
+.scrollbar-track-y {
+  width: 1px !important;
+}
+
+// .bg {
+//   // background-image: url("../image/black-bg4.jpg");
+
+//   background-size: cover;
+//   background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)),
+//     url("../image/black-bg-edited.png");
+//   background-position: center center;
+// }
+
+@import "scss/nav";
+
+@import "scss/helper";
+@import "scss/hero";
+@import "scss/feature";
+@import "scss/services";
+@import "scss/partners";
+@import "scss/project";
+@import "scss/footer";

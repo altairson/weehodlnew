@@ -1,0 +1,150 @@
+footer {
+  padding: 100px 0px;
+  // padding-top: 250px;
+  background: linear-gradient(
+    115.52deg,
+    #ffe600 5.27%,
+    #eebc1d 43.15%,
+    #9f7b06 104.08%
+  );
+
+  .text {
+    h1 {
+      font-weight: 900;
+      color: black;
+      font-size: 5vw;
+      position: relative;
+      overflow: hidden;
+      height: 120px;
+      margin: 0 auto;
+      width: 100%;
+
+      @media (max-width: 795px) {
+        font-size: 50px;
+        height: 70px;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 40px;
+        height: 50px;
+      }
+
+      @media (max-width: 560px) {
+        font-size: 30px;
+        height: 50px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 5vw;
+        height: 7vw;
+      }
+    }
+
+    .hidden-text {
+      position: absolute;
+      z-index: 200;
+
+      @media (max-width: 500px) {
+        text-align: center;
+        width: 100%;
+      }
+
+      .outline {
+        color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+
+        @media (max-width: 500px) {
+          -webkit-text-stroke-width: 1px;
+        }
+      }
+    }
+  }
+
+  .links-container {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .links {
+      display: flex;
+      li {
+        list-style-type: none;
+        margin-top: 8px;
+        margin: 10px;
+
+        a {
+          color: black;
+          text-transform: uppercase;
+          text-decoration: none;
+          img {
+            width: 50px;
+          }
+        }
+      }
+
+      .smaller {
+        width: 40px !important;
+        margin: 0 auto;
+        display: block;
+        margin-top: 5px;
+      }
+
+      @media (max-width: 500px) {
+        justify-content: center;
+        display: flex;
+        margin-top: 8px;
+        li {
+        }
+        .smaller {
+        }
+      }
+    }
+
+    .logo-container {
+      img {
+        width: 160px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      .links {
+        text-align: center;
+      }
+    }
+  }
+
+  .bottom-text {
+    margin-top: 20px;
+
+    @media (max-width: 500px) {
+      text-align: center;
+    }
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  color: white;
+  bottom: 5%;
+  right: 5%;
+  background-color: #0d0d0d;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0.2;
+  transition: all 0.4s ease;
+  img {
+    width: 20px;
+    transform: rotate(180deg);
+    border-radius: 6px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
