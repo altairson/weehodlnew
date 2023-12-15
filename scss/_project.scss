@@ -1,0 +1,332 @@
+.projects-section {
+  padding: 220px 0px 200px 0px;
+  background-color: #f5f5f5;
+
+  .text {
+    h1 {
+      font-weight: 900;
+      color: black;
+      font-size: 60px;
+      position: relative;
+      overflow: hidden;
+      height: 100px;
+      margin: 0 auto;
+
+      @media (max-width: 795px) {
+        font-size: 50px;
+        height: 70px;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 40px;
+        height: 50px;
+      }
+
+      @media (max-width: 560px) {
+        font-size: 30px;
+        height: 50px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 35px;
+        height: 40px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 30px;
+        height: 40px;
+      }
+    }
+
+    .hidden-text {
+      position: absolute;
+      z-index: 200;
+      width: 100%;
+      text-align: center;
+      span {
+        color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+      }
+    }
+
+    .second {
+      height: initial;
+      text-align: center;
+      margin: 0 auto;
+
+      div {
+        display: inline-block;
+
+        &:nth-child(2) {
+          color: transparent;
+          -webkit-text-stroke-width: 3px;
+          -webkit-text-stroke-color: black;
+
+          @media (max-width: 500px) {
+            -webkit-text-stroke-width: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  .projects-container {
+    margin-top: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .project-item {
+      margin: 80px 3%;
+      width: 23%;
+      position: relative;
+      z-index: 66;
+      // box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.25);
+
+      .logo-container {
+        position: relative;
+        z-index: 66;
+        img {
+          filter: grayscale(100%);
+          height: 100px;
+          max-width: 200px;
+          margin: 0 auto;
+          display: block;
+          position: static;
+          z-index: 999;
+        }
+
+        p {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+          text-align: center;
+          font-weight: bold;
+          margin-top: 10px;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+      }
+
+      &:hover {
+        img {
+          filter: grayscale(0%) !important;
+        }
+      }
+
+      .project-infos {
+        border-radius: 6px;
+        padding: 0px 20px;
+        overflow-y: hidden;
+        position: absolute;
+        top: -25%;
+        box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.25);
+        background-color: rgb(255, 255, 255);
+        width: 110%;
+        padding-top: calc(100px + 30%);
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+
+        .more {
+          margin-top: calc(20% - 20px);
+          img {
+            width: 20px;
+            margin: 0 auto;
+            display: block;
+            padding-bottom: 25px;
+          }
+        }
+
+        .larger {
+          margin-top: 20%;
+        }
+        .description {
+          max-height: 0px;
+          .description-title {
+            font-weight: bold;
+          }
+
+          ul {
+            margin-top: 11px;
+            margin-left: 20px;
+            li {
+              margin-top: 8px;
+              font-weight: 200;
+            }
+          }
+
+          .number {
+            text-align: center;
+            margin-top: 40px;
+            h1 {
+              font-size: 40px;
+              font-weight: bold;
+            }
+
+            p {
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        @media (max-width: 500px) {
+          width: 110% !important;
+        }
+      }
+
+      // &:hover {
+      //   .project-infos {
+      //     height: initial;
+      //     display: initial;
+      //   }
+
+      //   .logo-container {
+      //     img {
+      //       filter: grayscale(0%);
+      //     }
+      //   }
+      // }
+
+      @media (max-width: 1140px) {
+        min-width: 300px;
+      }
+
+      @media (max-width: 700px) {
+        width: 50%;
+        min-width: initial;
+        margin: 30px 0px;
+        padding: 20px;
+        position: static;
+        z-index: 99;
+        .logo-container {
+          width: 100%;
+          img {
+            max-width: 100%;
+            max-height: 80px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .project-infos {
+          width: 90% !important;
+          display: none !important;
+        }
+      }
+    }
+
+    @media (max-width: 1140px) {
+      justify-content: center;
+    }
+  }
+
+  .button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 50px;
+  }
+}
+
+.projects-infos-container {
+  @media (max-width: 500px) {
+    display: none;
+  }
+  position: fixed;
+  background-color: pink;
+  top: 100px;
+  left: 50%;
+  height: 80vh;
+  width: 90vw;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: none;
+  box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.25);
+  border-radius: 6px;
+  padding: 20px 20px;
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  .project-image {
+    margin-top: 20px;
+    img {
+      max-width: 100px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    p {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+  .more {
+    margin-top: calc(20% - 20px);
+    img {
+      width: 20px;
+      margin: 0 auto;
+      display: block;
+      padding-bottom: 25px;
+    }
+  }
+
+  .description {
+    margin-top: 45px;
+    .description-title {
+      font-weight: bold;
+    }
+
+    ul {
+      margin-top: 11px;
+      margin-left: 20px;
+      li {
+        margin-top: 8px;
+        font-weight: 200;
+      }
+    }
+
+    .number {
+      text-align: center;
+      margin-top: 40px;
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      p {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    width: 15px;
+    img {
+      width: 100%;
+    }
+  }
+}

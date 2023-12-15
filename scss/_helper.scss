@@ -1,0 +1,18 @@
+.container {
+  padding: 0px 10%;
+  margin: 0px auto;
+  display: block;
+  max-width: 2000px;
+}
+
+body,
+html,
+.scroller {
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+.yellow {
+  color: #f7c801;
+}
