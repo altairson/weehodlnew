@@ -55,7 +55,7 @@ gsap.to(fundedValue,2,{
   }
 });
 
-var investorNum={val:0} , investors = 1202;
+var investorNum={val:0} , investors = 700;
 
 gsap.to(investorNum,2,{
   val:investors,
@@ -70,7 +70,7 @@ gsap.to(investorNum,2,{
 });
 
 
-var kolsValue={val:0} , kols = 272;
+var kolsValue={val:0} , kols = 100;
 
 gsap.to(kolsValue,1,{
   val:kols,
@@ -84,7 +84,7 @@ gsap.to(kolsValue,1,{
   }
 });
 
-var shillersValue={val:0} , shillers = 387;
+var shillersValue={val:0} , shillers = 2000;
 
 gsap.to(shillersValue,1,{
   val:shillers,
